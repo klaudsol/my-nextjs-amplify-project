@@ -1,5 +1,25 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Generating your NextJS11 app
+
+* AWS Amplify requires Node.js 14 and NextJS 11
+* Downgrade NextJS to version 11 by removing current version, and installing version 11.
+
+```bash
+nvm use 14
+npx create-next-app my-nextjs-amplify-project
+cd my-nextjs-amplify-project
+
+#Downgrade NextJS cleanly
+npm uninstall next
+rm -Rf node_modules && rm package.json
+npm install --save next@^11.0.0
+npm install
+
+#Check if Ampilfy can build it properly
+npm run build
+```
+
 ## Getting Started
 
 First, run the development server:
