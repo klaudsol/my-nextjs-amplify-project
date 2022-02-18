@@ -3,6 +3,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 ## Generating your NextJS11 app
 
 * AWS Amplify requires Node.js 14 and NextJS 11
+* By default, AWS Amplify uses `yarn` to build. Using `npm` would cause build problems!
 * Downgrade NextJS to version 11 by removing current version, and installing version 11.
 
 ```bash
