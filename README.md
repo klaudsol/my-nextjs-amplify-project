@@ -11,8 +11,8 @@ npx create-next-app my-nextjs-amplify-project
 cd my-nextjs-amplify-project
 
 #Downgrade NextJS cleanly
-yarn remove next
-rm -Rf node_modules && rm package.json
+npm uninstall next
+rm -Rf node_modules && rm package-lock.json
 yarn add next@^11.0.0
 yarn install
 
